@@ -13,9 +13,6 @@ public class Desk {
 
     private int               dskNumber;
 
-    @ManyToOne
-    private GroupDesk groupDesk;
-
     @OneToMany(cascade ={CascadeType.MERGE, CascadeType.PERSIST} )
     @JoinColumn(name = "dsk_id")
     private Set<Material> material;
@@ -34,14 +31,6 @@ public class Desk {
 
     public void setDskNumber(int dskNumber) {
         this.dskNumber = dskNumber;
-    }
-
-    public GroupDesk getGroupDesk() {
-        return groupDesk;
-    }
-
-    public void setGroupDesk(GroupDesk groupDesk) {
-        this.groupDesk = groupDesk;
     }
 
     public Set<Material> getMaterial() {
