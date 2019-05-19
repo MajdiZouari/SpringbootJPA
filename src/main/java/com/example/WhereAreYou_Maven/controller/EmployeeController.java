@@ -3,7 +3,6 @@ package com.example.WhereAreYou_Maven.controller;
 import com.example.WhereAreYou_Maven.model.Desk;
 import com.example.WhereAreYou_Maven.model.Employee;
 import com.example.WhereAreYou_Maven.repository.DeskRepository;
-import com.example.WhereAreYou_Maven.repository.EmployeeRepository;
 import com.example.WhereAreYou_Maven.services.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

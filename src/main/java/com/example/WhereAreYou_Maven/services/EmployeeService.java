@@ -18,10 +18,10 @@ public class EmployeeService {
     }
 
     public Employee getEmployeeById(long id){
-        return employeeRepository.findOneById(id);
+        return employeeRepository.getOne(id);
     }
 
-    public void deleteUserById(long id){
+    public void deleteEmployeeById(long id){
         employeeRepository.deleteById(id);
     }
 
