@@ -2,11 +2,12 @@ package com.example.WhereAreYou_Maven.model;
 
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-public class Status {
+public class Status  implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

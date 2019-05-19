@@ -2,11 +2,12 @@ package com.example.WhereAreYou_Maven.model;
 
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-public class Profession {
+public class Profession implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

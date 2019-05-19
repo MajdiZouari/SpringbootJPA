@@ -1,11 +1,11 @@
 package com.example.WhereAreYou_Maven.model;
 
-
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Set;
 
 @Entity
-public class Desk {
+public class Desk implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

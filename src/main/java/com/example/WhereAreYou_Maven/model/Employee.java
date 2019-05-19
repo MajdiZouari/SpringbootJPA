@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.Set;
 import javax.persistence.*;
 import javax.persistence.Entity;
+import javax.validation.constraints.NotNull;
 
 @Entity
 public class Employee implements Serializable {
@@ -13,6 +14,7 @@ public class Employee implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long              empId;
 
+    @NotNull
     private String            name;
 
     @OneToOne

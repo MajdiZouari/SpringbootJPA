@@ -2,9 +2,10 @@ package com.example.WhereAreYou_Maven.model;
 
 import javax.persistence.*;
 import javax.persistence.Entity;
+import java.io.Serializable;
 
 @Entity
-public class Material {
+public class Material implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
